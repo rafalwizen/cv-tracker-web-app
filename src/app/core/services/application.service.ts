@@ -96,10 +96,10 @@ export class ApplicationService {
   }
 
   getScreenshotUrl(path: string): string {
+    if (path.startsWith('http')) return path;
     const { data: { publicUrl } } = supabase.storage
       .from('job-screenshots')
       .getPublicUrl(path);
-
     return publicUrl;
   }
 }

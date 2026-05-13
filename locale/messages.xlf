@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="detail.company" datatype="html">
+        <source>Company:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-detail/application-detail.component.ts</context>
+          <context context-type="linenumber">39,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="detail.position" datatype="html">
+        <source>Position:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-detail/application-detail.component.ts</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="detail.status" datatype="html">
+        <source>Status:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-detail/application-detail.component.ts</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="detail.jobLink" datatype="html">
+        <source>Job link:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-detail/application-detail.component.ts</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="detail.salary" datatype="html">
+        <source>Salary range:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-detail/application-detail.component.ts</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="detail.location" datatype="html">
+        <source>Location:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-detail/application-detail.component.ts</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="detail.notes" datatype="html">
+        <source>Notes:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-detail/application-detail.component.ts</context>
+          <context context-type="linenumber">79,80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="detail.appliedAt" datatype="html">
+        <source>Applied at:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-detail/application-detail.component.ts</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="detail.screenshot" datatype="html">
+        <source>Screenshot:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-detail/application-detail.component.ts</context>
+          <context context-type="linenumber">90,91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="detail.back" datatype="html">
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>arrow_back<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> Back </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-detail/application-detail.component.ts</context>
+          <context context-type="linenumber">98,100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="detail.edit" datatype="html">
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>edit<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> Edit </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-detail/application-detail.component.ts</context>
+          <context context-type="linenumber">102,104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="detail.delete" datatype="html">
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>delete<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> Delete </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-detail/application-detail.component.ts</context>
+          <context context-type="linenumber">106,108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.editTitle" datatype="html">
+        <source>Edit Application</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-form/application-form.component.ts</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.createTitle" datatype="html">
+        <source>New Application</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-form/application-form.component.ts</context>
+          <context context-type="linenumber">50,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.companyName" datatype="html">
+        <source>Company Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-form/application-form.component.ts</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.position" datatype="html">
+        <source>Position</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-form/application-form.component.ts</context>
+          <context context-type="linenumber">72,73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.status" datatype="html">
+        <source>Status</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-form/application-form.component.ts</context>
+          <context context-type="linenumber">85,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.jobLink" datatype="html">
+        <source>Job Link</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-form/application-form.component.ts</context>
+          <context context-type="linenumber">95,96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.salaryRange" datatype="html">
+        <source>Salary Range</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-form/application-form.component.ts</context>
+          <context context-type="linenumber">108,109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.location" datatype="html">
+        <source>Location</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-form/application-form.component.ts</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.notes" datatype="html">
+        <source>Notes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-form/application-form.component.ts</context>
+          <context context-type="linenumber">120,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.appliedAt" datatype="html">
+        <source>Applied At</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-form/application-form.component.ts</context>
+          <context context-type="linenumber">126,127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.screenshot" datatype="html">
+        <source>Screenshot</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-form/application-form.component.ts</context>
+          <context context-type="linenumber">134,135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.save" datatype="html">
+        <source>Save</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-form/application-form.component.ts</context>
+          <context context-type="linenumber">174,175</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.cancel" datatype="html">
+        <source> Cancel </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/application-form/application-form.component.ts</context>
+          <context context-type="linenumber">182,183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.title" datatype="html">
+        <source>Sign In</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login/login.component.ts</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.email" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login/login.component.ts</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.emailRequired" datatype="html">
+        <source>Email is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login/login.component.ts</context>
+          <context context-type="linenumber">37,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.password" datatype="html">
+        <source>Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login/login.component.ts</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.submit" datatype="html">
+        <source>Sign In</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login/login.component.ts</context>
+          <context context-type="linenumber">58,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.registerLink" datatype="html">
+        <source>Don&apos;t have an account? Register</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login/login.component.ts</context>
+          <context context-type="linenumber">64,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.title" datatype="html">
+        <source>Create Account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.component.ts</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.displayName" datatype="html">
+        <source>Display Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.component.ts</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.email" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.component.ts</context>
+          <context context-type="linenumber">39,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.password" datatype="html">
+        <source>Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.component.ts</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.submit" datatype="html">
+        <source>Create Account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.component.ts</context>
+          <context context-type="linenumber">60,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.loginLink" datatype="html">
+        <source>Already have an account? Sign In</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.component.ts</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dashboard.title" datatype="html">
+        <source>Job Applications</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/dashboard/dashboard.component.ts</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.applications" datatype="html">
+        <source>Applications</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/layout/layout.component.ts</context>
+          <context context-type="linenumber">43,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.addNew" datatype="html">
+        <source>Add New</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/layout/layout.component.ts</context>
+          <context context-type="linenumber">47,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="status.applied" datatype="html">
+        <source>Applied</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/utils/status-labels.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="status.phone_screen" datatype="html">
+        <source>Phone Screen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/utils/status-labels.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="status.interview" datatype="html">
+        <source>Interview</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/utils/status-labels.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="status.technical" datatype="html">
+        <source>Technical Interview</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/utils/status-labels.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="status.offer" datatype="html">
+        <source>Offer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/utils/status-labels.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="status.rejected" datatype="html">
+        <source>Rejected</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/utils/status-labels.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="status.withdrawn" datatype="html">
+        <source>Withdrawn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/utils/status-labels.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

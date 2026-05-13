@@ -5,6 +5,12 @@
   "projects": {
     "cv-tracker": {
       "projectType": "application",
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "pl": "locale/messages.pl.xlf"
+        }
+      },
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss",
@@ -54,6 +60,7 @@
                 "input": "public"
               }
             ],
+            "serviceWorker": "ngsw-config.json",
             "styles": [
               "src/styles.scss"
             ],
@@ -74,6 +81,19 @@
                 }
               ],
               "outputHashing": "all"
+            },
+            "pl": {
+              "localize": ["pl"],
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "750kB",
+                  "maximumError": "1.5MB"
+                }
+              ]
+            },
+            "en": {
+              "localize": ["en"]
             },
             "development": {
               "optimization": false,

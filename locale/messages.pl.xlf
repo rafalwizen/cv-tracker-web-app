@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" target-language="pl" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="detail.company" datatype="html">
+        <source>Company:</source>
+        <target>Firma:</target>
+      </trans-unit>
+      <trans-unit id="detail.position" datatype="html">
+        <source>Position:</source>
+        <target>Stanowisko:</target>
+      </trans-unit>
+      <trans-unit id="detail.status" datatype="html">
+        <source>Status:</source>
+        <target>Status:</target>
+      </trans-unit>
+      <trans-unit id="detail.jobLink" datatype="html">
+        <source>Job link:</source>
+        <target>Link do ogłoszenia:</target>
+      </trans-unit>
+      <trans-unit id="detail.salary" datatype="html">
+        <source>Salary range:</source>
+        <target>Widełki wynagrodzenia:</target>
+      </trans-unit>
+      <trans-unit id="detail.location" datatype="html">
+        <source>Location:</source>
+        <target>Lokalizacja:</target>
+      </trans-unit>
+      <trans-unit id="detail.notes" datatype="html">
+        <source>Notes:</source>
+        <target>Notatki:</target>
+      </trans-unit>
+      <trans-unit id="detail.appliedAt" datatype="html">
+        <source>Applied at:</source>
+        <target>Data aplikacji:</target>
+      </trans-unit>
+      <trans-unit id="detail.screenshot" datatype="html">
+        <source>Screenshot:</source>
+        <target>Zrzut ekranu:</target>
+      </trans-unit>
+      <trans-unit id="detail.back" datatype="html">
+        <source> Back </source>
+        <target> Powrót </target>
+      </trans-unit>
+      <trans-unit id="detail.edit" datatype="html">
+        <source> Edit </source>
+        <target> Edytuj </target>
+      </trans-unit>
+      <trans-unit id="detail.delete" datatype="html">
+        <source> Delete </source>
+        <target> Usuń </target>
+      </trans-unit>
+      <trans-unit id="form.editTitle" datatype="html">
+        <source>Edit Application</source>
+        <target>Edytuj aplikację</target>
+      </trans-unit>
+      <trans-unit id="form.createTitle" datatype="html">
+        <source>New Application</source>
+        <target>Nowa aplikacja</target>
+      </trans-unit>
+      <trans-unit id="form.companyName" datatype="html">
+        <source>Company Name</source>
+        <target>Nazwa firmy</target>
+      </trans-unit>
+      <trans-unit id="form.position" datatype="html">
+        <source>Position</source>
+        <target>Stanowisko</target>
+      </trans-unit>
+      <trans-unit id="form.status" datatype="html">
+        <source>Status</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="form.jobLink" datatype="html">
+        <source>Job Link</source>
+        <target>Link do ogłoszenia</target>
+      </trans-unit>
+      <trans-unit id="form.salaryRange" datatype="html">
+        <source>Salary Range</source>
+        <target>Widełki wynagrodzenia</target>
+      </trans-unit>
+      <trans-unit id="form.location" datatype="html">
+        <source>Location</source>
+        <target>Lokalizacja</target>
+      </trans-unit>
+      <trans-unit id="form.notes" datatype="html">
+        <source>Notes</source>
+        <target>Notatki</target>
+      </trans-unit>
+      <trans-unit id="form.appliedAt" datatype="html">
+        <source>Applied At</source>
+        <target>Data aplikacji</target>
+      </trans-unit>
+      <trans-unit id="form.screenshot" datatype="html">
+        <source>Screenshot</source>
+        <target>Zrzut ekranu</target>
+      </trans-unit>
+      <trans-unit id="form.save" datatype="html">
+        <source>Save</source>
+        <target>Zapisz</target>
+      </trans-unit>
+      <trans-unit id="form.cancel" datatype="html">
+        <source> Cancel </source>
+        <target> Anuluj </target>
+      </trans-unit>
+      <trans-unit id="login.title" datatype="html">
+        <source>Sign In</source>
+        <target>Zaloguj się</target>
+      </trans-unit>
+      <trans-unit id="login.email" datatype="html">
+        <source>Email</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="login.emailRequired" datatype="html">
+        <source>Email is required</source>
+        <target>Email jest wymagany</target>
+      </trans-unit>
+      <trans-unit id="login.password" datatype="html">
+        <source>Password</source>
+        <target>Hasło</target>
+      </trans-unit>
+      <trans-unit id="login.submit" datatype="html">
+        <source>Sign In</source>
+        <target>Zaloguj się</target>
+      </trans-unit>
+      <trans-unit id="login.registerLink" datatype="html">
+        <source>Don&apos;t have an account? Register</source>
+        <target>Nie masz konta? Zarejestruj się</target>
+      </trans-unit>
+      <trans-unit id="register.title" datatype="html">
+        <source>Create Account</source>
+        <target>Utwórz konto</target>
+      </trans-unit>
+      <trans-unit id="register.displayName" datatype="html">
+        <source>Display Name</source>
+        <target>Nazwa wyświetlana</target>
+      </trans-unit>
+      <trans-unit id="register.email" datatype="html">
+        <source>Email</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="register.password" datatype="html">
+        <source>Password</source>
+        <target>Hasło</target>
+      </trans-unit>
+      <trans-unit id="register.submit" datatype="html">
+        <source>Create Account</source>
+        <target>Utwórz konto</target>
+      </trans-unit>
+      <trans-unit id="register.loginLink" datatype="html">
+        <source>Already have an account? Sign In</source>
+        <target>Masz już konto? Zaloguj się</target>
+      </trans-unit>
+      <trans-unit id="dashboard.title" datatype="html">
+        <source>Job Applications</source>
+        <target>Aplikacje o pracę</target>
+      </trans-unit>
+      <trans-unit id="nav.applications" datatype="html">
+        <source>Applications</source>
+        <target>Aplikacje</target>
+      </trans-unit>
+      <trans-unit id="nav.addNew" datatype="html">
+        <source>Add New</source>
+        <target>Dodaj nową</target>
+      </trans-unit>
+      <trans-unit id="status.applied" datatype="html">
+        <source>Applied</source>
+        <target>Aplikowano</target>
+      </trans-unit>
+      <trans-unit id="status.phone_screen" datatype="html">
+        <source>Phone Screen</source>
+        <target>Rozmowa telefoniczna</target>
+      </trans-unit>
+      <trans-unit id="status.interview" datatype="html">
+        <source>Interview</source>
+        <target>Rozmowa rekrutacyjna</target>
+      </trans-unit>
+      <trans-unit id="status.technical" datatype="html">
+        <source>Technical Interview</source>
+        <target>Rozmowa techniczna</target>
+      </trans-unit>
+      <trans-unit id="status.offer" datatype="html">
+        <source>Offer</source>
+        <target>Oferta</target>
+      </trans-unit>
+      <trans-unit id="status.rejected" datatype="html">
+        <source>Rejected</source>
+        <target>Odrzucono</target>
+      </trans-unit>
+      <trans-unit id="status.withdrawn" datatype="html">
+        <source>Withdrawn</source>
+        <target>Wycofano</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

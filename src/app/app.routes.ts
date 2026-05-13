@@ -16,24 +16,27 @@ export const routes: Routes = [
     loadComponent: () => import('./features/auth/register/register.component').then(m => m.RegisterComponent),
   },
   {
-    path: 'dashboard',
-    loadComponent: () => import('./features/dashboard/dashboard.component').then(m => m.DashboardComponent),
+    path: '',
+    loadComponent: () => import('./features/layout/layout.component').then(m => m.LayoutComponent),
     canActivate: [authGuard],
-  },
-  {
-    path: 'applications/new',
-    loadComponent: () => import('./features/application-form/application-form.component').then(m => m.ApplicationFormComponent),
-    canActivate: [authGuard],
-  },
-  {
-    path: 'applications/:id',
-    loadComponent: () => import('./features/application-detail/application-detail.component').then(m => m.ApplicationDetailComponent),
-    canActivate: [authGuard],
-  },
-  {
-    path: 'applications/:id/edit',
-    loadComponent: () => import('./features/application-form/application-form.component').then(m => m.ApplicationFormComponent),
-    canActivate: [authGuard],
+    children: [
+      {
+        path: 'dashboard',
+        loadComponent: () => import('./features/dashboard/dashboard.component').then(m => m.DashboardComponent),
+      },
+      {
+        path: 'applications/new',
+        loadComponent: () => import('./features/application-form/application-form.component').then(m => m.ApplicationFormComponent),
+      },
+      {
+        path: 'applications/:id',
+        loadComponent: () => import('./features/application-detail/application-detail.component').then(m => m.ApplicationDetailComponent),
+      },
+      {
+        path: 'applications/:id/edit',
+        loadComponent: () => import('./features/application-form/application-form.component').then(m => m.ApplicationFormComponent),
+      },
+    ],
   },
   {
     path: '**',

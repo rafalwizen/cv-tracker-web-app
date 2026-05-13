@@ -35,7 +35,6 @@ import { Application, ApplicationStatus } from '../../core/models/application.mo
   ],
   template: `
     <div class="dashboard-container">
-      <!-- Header -->
       <div class="header-bar">
         <h1 i18n="@@dashboard.title">Job Applications</h1>
         <button mat-raised-button color="primary" routerLink="/applications/new">
@@ -44,7 +43,6 @@ import { Application, ApplicationStatus } from '../../core/models/application.mo
         </button>
       </div>
 
-      <!-- Filter row -->
       <div class="filter-row">
         <mat-form-field appearance="outline" class="status-filter">
           <mat-label>Filter by status</mat-label>
@@ -57,50 +55,36 @@ import { Application, ApplicationStatus } from '../../core/models/application.mo
         </mat-form-field>
       </div>
 
-      <!-- Loading spinner -->
       @if (loading) {
         <div class="spinner-container">
           <mat-spinner diameter="40"></mat-spinner>
         </div>
       }
 
-      <!-- Table -->
+      <!-- Desktop table -->
       @if (!loading && filteredApplications.length > 0) {
-        <div class="table-wrapper">
+        <div class="table-wrapper desktop-only">
           <table mat-table [dataSource]="filteredApplications" class="applications-table">
-            <!-- Company Name column -->
             <ng-container matColumnDef="company_name">
               <th mat-header-cell *matHeaderCellDef>Company</th>
               <td mat-cell *matCellDef="let app">{{ app.company_name }}</td>
             </ng-container>
-
-            <!-- Position column -->
             <ng-container matColumnDef="position">
               <th mat-header-cell *matHeaderCellDef>Position</th>
               <td mat-cell *matCellDef="let app">{{ app.position }}</td>
             </ng-container>
-
-            <!-- Status column -->
             <ng-container matColumnDef="status">
               <th mat-header-cell *matHeaderCellDef>Status</th>
               <td mat-cell *matCellDef="let app">
-                <mat-chip
-                  [color]="getStatusColor(app.status)"
-                  [highlighted]="true"
-                  class="status-chip"
-                >
+                <mat-chip [color]="getStatusColor(app.status)" [highlighted]="true" class="status-chip">
                   {{ getStatusLabel(app.status) }}
                 </mat-chip>
               </td>
             </ng-container>
-
-            <!-- Applied At column -->
             <ng-container matColumnDef="applied_at">
               <th mat-header-cell *matHeaderCellDef>Applied</th>
               <td mat-cell *matCellDef="let app">{{ app.applied_at | date:'mediumDate' }}</td>
             </ng-container>
-
-            <!-- Actions column -->
             <ng-container matColumnDef="actions">
               <th mat-header-cell *matHeaderCellDef>Actions</th>
               <td mat-cell *matCellDef="let app">
@@ -115,14 +99,40 @@ import { Application, ApplicationStatus } from '../../core/models/application.mo
                 </button>
               </td>
             </ng-container>
-
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
           </table>
         </div>
+
+        <!-- Mobile cards -->
+        <div class="mobile-only">
+          @for (app of filteredApplications; track app.id) {
+            <mat-card class="app-card" (click)="viewApplication(app.id)">
+              <mat-card-content>
+                <div class="card-header">
+                  <div class="card-title">{{ app.company_name }}</div>
+                  <mat-chip [color]="getStatusColor(app.status)" [highlighted]="true" class="status-chip">
+                    {{ getStatusLabel(app.status) }}
+                  </mat-chip>
+                </div>
+                <div class="card-position">{{ app.position }}</div>
+                <div class="card-footer">
+                  <span class="card-date">{{ app.applied_at | date:'mediumDate' }}</span>
+                  <div class="card-actions">
+                    <button mat-icon-button (click)="editApplication(app.id); $event.stopPropagation()">
+                      <mat-icon>edit</mat-icon>
+                    </button>
+                    <button mat-icon-button color="warn" (click)="deleteApplication(app); $event.stopPropagation()">
+                      <mat-icon>delete</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          }
+        </div>
       }
 
-      <!-- Empty state -->
       @if (!loading && filteredApplications.length === 0) {
         <mat-card class="empty-state">
           <mat-card-content>
@@ -220,7 +230,58 @@ import { Application, ApplicationStatus } from '../../core/models/application.mo
       color: #9e9e9e !important;
     }
 
+    /* Mobile cards */
+    .mobile-only { display: none; }
+    .desktop-only { display: block; }
+
+    .app-card {
+      margin-bottom: 12px;
+      cursor: pointer;
+      transition: box-shadow 0.2s;
+    }
+
+    .app-card:hover {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+
+    .card-title {
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    .card-position {
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-date {
+      font-size: 0.8rem;
+      color: rgba(0, 0, 0, 0.45);
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 4px;
+    }
+
     @media (max-width: 768px) {
+      .mobile-only { display: block; }
+      .desktop-only { display: none; }
+
       .dashboard-container {
         padding: 16px;
       }
@@ -259,7 +320,7 @@ export class DashboardComponent implements OnInit {
       this.applications = await this.applicationService.getAll();
       this.applyFilter();
     } catch {
-      // silently handle - table will be empty
+      // silently handle
     } finally {
       this.loading = false;
     }

@@ -57,6 +57,16 @@ export class AuthService {
     return data;
   }
 
+  async deleteAccount(): Promise<void> {
+    const { error } = await supabase.functions.invoke('delete-user', {
+      method: 'POST',
+    });
+    if (error) throw error;
+
+    this._session.set(null);
+    this._user.set(null);
+  }
+
   async logout() {
     const { error } = await supabase.auth.signOut();
     if (error) throw error;

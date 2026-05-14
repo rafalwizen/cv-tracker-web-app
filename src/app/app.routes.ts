@@ -36,6 +36,10 @@ export const routes: Routes = [
         path: 'applications/:id/edit',
         loadComponent: () => import('./features/application-form/application-form.component').then(m => m.ApplicationFormComponent),
       },
+      {
+        path: 'settings',
+        loadComponent: () => import('./features/settings/settings.component').then(m => m.SettingsComponent),
+      },
     ],
   },
   {

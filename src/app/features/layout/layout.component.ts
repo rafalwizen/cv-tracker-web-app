@@ -6,6 +6,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { AuthService } from '../../core/auth/auth.service';
 
 @Component({
@@ -20,6 +21,7 @@ import { AuthService } from '../../core/auth/auth.service';
     MatListModule,
     MatIconModule,
     MatButtonModule,
+    MatTooltipModule,
   ],
   template: `
     <mat-toolbar color="primary" class="toolbar">
@@ -28,6 +30,9 @@ import { AuthService } from '../../core/auth/auth.service';
       @if (auth.user()?.email) {
         <span class="user-info">{{ auth.user()!.email }}</span>
       }
+      <button mat-icon-button routerLink="/settings" matTooltip="Settings">
+        <mat-icon>settings</mat-icon>
+      </button>
       <button mat-icon-button (click)="logout()" matTooltip="Sign out">
         <mat-icon>logout</mat-icon>
       </button>
@@ -45,6 +50,10 @@ import { AuthService } from '../../core/auth/auth.service';
       <a class="nav-item" routerLink="/applications/new" routerLinkActive="active">
         <mat-icon>add_circle</mat-icon>
         <span i18n="@@nav.addNew">Add New</span>
+      </a>
+      <a class="nav-item" routerLink="/settings" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon>settings</mat-icon>
+        <span i18n="@@nav.settings">Settings</span>
       </a>
     </nav>
   `,
